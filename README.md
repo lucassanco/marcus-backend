@@ -1,6 +1,8 @@
 # README
 This is the backend for Marcus' shop. The idea is that this serves as a customizable shop, in which family of products can be created and customized.
 
+Check the frontend [here](https://github.com/lucassanco/marcus-frontend)
+
 ## 
 Marcus has the ability to:
 - Browse products families and create/delete/update them
