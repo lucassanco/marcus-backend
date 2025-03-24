@@ -1,0 +1,1 @@
+json.extract! cart_item, :id, :product_name, :selected_options, :selected_options_names

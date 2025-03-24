@@ -1,0 +1,1 @@
+json.array! @current_cart.cart_items, partial: 'cart_item', as: :cart_item

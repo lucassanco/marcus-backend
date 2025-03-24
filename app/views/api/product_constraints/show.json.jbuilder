@@ -1,0 +1,1 @@
+json.partial! 'product_constraint', product_constraint: @constraint

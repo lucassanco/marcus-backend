@@ -1,0 +1,1 @@
+json.array! @constraints, partial: 'product_constraint', as: :product_constraint

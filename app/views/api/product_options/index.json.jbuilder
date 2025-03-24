@@ -1,0 +1,1 @@
+json.array! @product_options, partial: 'product_option', as: :product_option

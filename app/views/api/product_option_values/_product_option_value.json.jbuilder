@@ -1,0 +1,1 @@
+json.extract! product_option_value, :id, :name, :value_type, :stock_count, :product_option_id

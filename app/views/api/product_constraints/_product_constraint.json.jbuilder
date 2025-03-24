@@ -1,0 +1,1 @@
+json.extract! product_constraint, :id, :product_id, :option_1_id, :option_1_name, :option_2_id, :option_2_name, :value_1_id, :value_1_name, :allowed_values_names, :allowed_value_ids

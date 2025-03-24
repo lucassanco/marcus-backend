@@ -1,0 +1,1 @@
+json.array! @product_option_values, :id, :product_option_id, :name, :value_type, :stock_count
