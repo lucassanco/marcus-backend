@@ -17,23 +17,23 @@ wheels = ProductOption.find_or_create_by(product: bmx, name: "Wheels")
 rim_color = ProductOption.find_or_create_by(product: bmx, name: "Rim Color")
 chain = ProductOption.find_or_create_by(product: bmx, name: "Chain")
 
-full_suspension = ProductOptionValue.find_or_create_by(product_option: frame_type, name: "Full-suspension")
-ProductOptionValue.find_or_create_by(product_option: frame_type, name: "Diamond")
-ProductOptionValue.find_or_create_by(product_option: frame_type, name: "Step-through")
+full_suspension = ProductOptionValue.find_or_create_by(product_option: frame_type, name: "Full-suspension", stock_count: 10)
+ProductOptionValue.find_or_create_by(product_option: frame_type, name: "Diamond", stock_count: 10)
+ProductOptionValue.find_or_create_by(product_option: frame_type, name: "Step-through", stock_count: 10)
 
-ProductOptionValue.find_or_create_by(product_option: frame_finish, name: "Matte")
-ProductOptionValue.find_or_create_by(product_option: frame_finish, name: "Shiny")
+ProductOptionValue.find_or_create_by(product_option: frame_finish, name: "Matte", stock_count: 10)
+ProductOptionValue.find_or_create_by(product_option: frame_finish, name: "Shiny", stock_count: 10)
 
-ProductOptionValue.find_or_create_by(product_option: wheels, name: "Road wheels")
-mountain_wheels = ProductOptionValue.find_or_create_by(product_option: wheels, name: "Mountain wheels")
-fat_bike_wheels = ProductOptionValue.find_or_create_by(product_option: wheels, name: "Fat bike wheels")
+ProductOptionValue.find_or_create_by(product_option: wheels, name: "Road wheels", stock_count: 10)
+mountain_wheels = ProductOptionValue.find_or_create_by(product_option: wheels, name: "Mountain wheels", stock_count: 10)
+fat_bike_wheels = ProductOptionValue.find_or_create_by(product_option: wheels, name: "Fat bike wheels", stock_count: 10)
 
-ProductOptionValue.find_or_create_by(product_option: rim_color, name: "Red")
-black = ProductOptionValue.find_or_create_by(product_option: rim_color, name: "Black")
-blue = ProductOptionValue.find_or_create_by(product_option: rim_color, name: "Blue")
+ProductOptionValue.find_or_create_by(product_option: rim_color, name: "Red", stock_count: 10)
+black = ProductOptionValue.find_or_create_by(product_option: rim_color, name: "Black", stock_count: 10)
+blue = ProductOptionValue.find_or_create_by(product_option: rim_color, name: "Blue", stock_count: 10)
 
-ProductOptionValue.find_or_create_by(product_option: chain, name: "Single-speed chain")
-ProductOptionValue.find_or_create_by(product_option: chain, name: "8-speed chain")
+ProductOptionValue.find_or_create_by(product_option: chain, name: "Single-speed chain", stock_count: 10)
+ProductOptionValue.find_or_create_by(product_option: chain, name: "8-speed chain", stock_count: 10)
 
 
 wheels_constraint_1 = ProductConstraint.find_or_create_by(product: bmx, option_1: wheels, option_2: frame_type, value_1: mountain_wheels)
