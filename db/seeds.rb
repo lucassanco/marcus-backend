@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-bicycle = ProductType.find_or_create_by(name: 'Bicycle', description: "Unlike regular bikes, like city bikes, BMX bikes boast a distinctive frame geometry. This component features smaller frames, shorter wheelbases, and robust construction. Together, they make up for the model's ability to withstand the rigours of tricks and jumps.")
+bicycle = ProductType.find_or_create_by(name: 'Bicycle', description: "Two-wheeled steerable machine that is pedaled by the rider's feet. On a standard bicycle the wheels are mounted in-line in a metal frame, with the front wheel held in a rotatable fork. The rider sits on a saddle and steers by leaning and turning handlebars that are attached to the fork.")
 bmx = Product.find_or_create_by(product_type: bicycle, name: "BMX", description: "Unlike regular bikes, like city bikes, BMX bikes boast a distinctive frame geometry. This component features smaller frames, shorter wheelbases, and robust construction. Together, they make up for the model's ability to withstand the rigours of tricks and jumps.")
 
 frame_type = ProductOption.find_or_create_by(product: bmx, name: "Frame Type")
