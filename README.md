@@ -3,6 +3,22 @@ This is the backend for Marcus' shop. The idea is that this serves as a customiz
 
 Check the frontend [here](https://github.com/lucassanco/marcus-frontend)
 
+##
+To run on a container on Docker:
+
+On the directory of the backend
+
+Build the image:
+
+```
+docker build -t backend .
+```
+
+Run the container: 
+
+```
+docker run -p 3000:3000 backend
+```
 ## 
 Marcus has the ability to:
 - Browse products families and create/delete/update them
